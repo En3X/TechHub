@@ -1,0 +1,81 @@
+/* width control */
+.w50{
+    width: 50%;
+}
+.w100{
+    width: 100%;
+}
+/* height control */
+.h45p{
+    height: 45px;
+}
+/* Padding control */
+.p10{
+    padding: 10px;
+}
+.p15{
+    padding: 15px;
+}
+.p20{
+    padding: 20px;
+}
+
+/* Margin control */
+.mt10{
+    margin-top: 10px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+.mr20{
+    margin-right: 20px;
+}
+/* Outline control */
+
+.ot0{
+    outline: none;
+}
+
+/* Input field control */
+.short-input{
+    width: 100%;
+    
+}
+/* Shadow control */
+.noshadow{
+    box-shadow: none;
+}
+/* Border Radius control */
+
+.rounded{
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+/* Background control */
+.bg0{
+    background-color: black;
+}
+.bg1{
+    background-color: white;
+}
+
+/* Display control */
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+
+.displayed{
+    display: block;
+}
+.hidden{
+    display: none;
+}
