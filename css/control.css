@@ -1,6 +1,7 @@
 *,body,html{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* width control */
@@ -35,6 +36,9 @@
 .mt10{
     margin-top: 10px;
 }
+.mt20{
+    margin-top: 20px;
+}
 .mt50{
     margin-top: 50px;
 }
@@ -53,8 +57,11 @@
 .mr20{
     margin-right: 20px;
 }
+.ml10{
+    margin-left: 10px;
+}
 .ml20{
-    margin-right: 20px;
+    margin-left: 20px;
 }
 .ml50{
     margin-left: 50px;
@@ -111,14 +118,16 @@
 .noselect{
     user-select: none;
 }
-
+.nodrag{
+    -webkit-user-drag: none;
+}
 /* Fade control */
 .fade{
-    animation: linear 0.3s fade;
+    animation: linear 0.8s fade;
 }
 @keyframes fade {
     from{
-        opacity: 0.5;
+        opacity: 0.3;
     }to{
         opacity: 1;
     }
@@ -150,4 +159,18 @@
 .button-pink-outline:hover .hoverShow{
     opacity: 1;
     transition: opacity ease-in-out 0.2s;
+}
+.slow-zoom{
+    overflow: hidden;
+}
+.slow-zoom:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in;
+}
+.slow-zoom:not(:hover){
+    transform: scale(1);
+    transition: transform 0.5s ease-in;
+}
+.zoomcursor{
+    cursor:zoom-in;
 }

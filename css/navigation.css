@@ -2,6 +2,7 @@ body,html,*{
     margin:0;padding:0;
 }
 .nav{
+    z-index: 9;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
