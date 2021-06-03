@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/text-control.css">
+        <link rel="stylesheet" href="./css/control.css">
+
+        <title>
+            Signup or Login
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/account.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="titlebar">
+                <div id="signupTitle"
+                 class="font-medium text-center text-70 anchor w50 p20">
+                    Signup
+                </div>
+                <div id="loginTitle"
+                 class="passive text-center font-medium anchor p20 w50">
+                    Login
+                </div>
+            </div>
+            <div
+             class="displayed p20 mt10 fade" id="signupFragment">
+                <p class="text-70 text-small font-italic mb20">Required fields are marked *</p>
+                <form action="#" method="POST" autocomplete="off">
+                    <input type="text" name="fname" id="fullname"
+                    class="p10 h45p w100 ot0 mb10 rounded noshadow font-regular text-70"
+                    placeholder="Full Name *"
+                    required
+                    >
+                    <input type="text" name="dname" id="displayname"
+                    class="p10 h45p w100 ot0 mb10 rounded noshadow font-regular text-70"
+                    placeholder="Display Name"
+                
+                    >
+                    <input type="email" name="email" id="email"
+                    class="p10 h45p w100 mb10 ot0 rounded noshadow font-regular text-70"
+                    placeholder="Email Address *"
+                    required
+                    >
+                    <input type="password" name="fname" id="spwd"
+                    class="p10 h45p w100 mb10 ot0 rounded noshadow font-regular text-70"
+                    placeholder="Select Password *"
+                    required
+                    >
+                    <input type="password" name="fname" id="cpwd"
+                    class="p10 h45p w100 mb10 ot0 rounded noshadow font-regular text-70"
+                    placeholder="Confirm Password *"
+                    required
+                    >
+
+                    <button
+                    type="submit"
+            
+                    id="signupbtn"
+                    class="w100 submitbtn h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
+                    >Signup</button>
+                </form>
+                <p class="text-70 font-bold text-center mt10">
+                    Or, signup using your social accounts
+                </p>
+                <div class="socialAccounts mt10 text-70 text-center">
+                    <i class="fa fa-facebook anchor mr10"></i>
+                    <i class="fa fa-twitter anchor mr10"></i>
+                    <i class="fa fa-google-plus anchor mr10"></i>
+                </div>
+            </div>
+
+            <!-- Login Section -->
+            <div
+            class="hidden p20 mt10 fade" id="loginFragment">
+               <p class="text-70 text-small font-italic mb20">Required fields are marked *</p>
+               <form action="#" method="POST" autocomplete="off">
+                   <input type="email" name="email" id="loginemail"
+                   class="p10 h45p w100 mb10 ot0 rounded noshadow font-regular text-70"
+                   placeholder="Email Address *"
+                   required
+                   >
+                   <input type="password" name="fname" id="loginpwd"
+                   class="p10 h45p w100 mb10 ot0 rounded noshadow font-regular text-70"
+                   placeholder="Enter Password *"
+                   required
+                   >
+                
+
+                   <button
+                   type="submit"
+                   id="loginbtn"
+                   class="w100 submitbtn h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
+                   >Login</button>
+               </form>
+               <p class="text-70 font-bold text-center mt10">
+                   Or, login using your social accounts
+               </p>
+               <div class="socialAccounts mt10 text-70 text-center">
+                   <i class="fa fa-facebook anchor mr10"></i>
+                   <i class="fa fa-twitter anchor mr10"></i>
+                   <i class="fa fa-google-plus anchor mr10"></i>
+               </div>
+           </div>
+        </div>
+    </body>
+    <script src="./js/account.js"></script>
+</html>
