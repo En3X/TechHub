@@ -1,3 +1,8 @@
+*,body,html{
+    margin: 0;
+    padding: 0;
+}
+
 /* width control */
 .w50{
     width: 50%;
@@ -30,7 +35,9 @@
 .mb20{
     margin-bottom: 20px;
 }
-
+.mr2{
+    margin-right: 2px;
+}
 .mr10{
     margin-right: 10px;
 }
@@ -52,11 +59,14 @@
 .noshadow{
     box-shadow: none;
 }
-/* Border Radius control */
+/* Border control */
 
 .rounded{
     border: 1px solid #707070;
     border-radius: 5px;
+}
+.noborder{
+    border: none;
 }
 
 /* Background control */
@@ -78,4 +88,8 @@
 }
 .hidden{
     display: none;
+}
+
+.noselect{
+    user-select: none;
 }
