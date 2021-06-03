@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/text-control.css">
+    <link href="./css/navigation.css" rel="stylesheet">
+    <link href="./css/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body class="noselect">
+    <nav class="nav p20">
+      <div class="logoSection anchor" onclick="window.open('index.html','_self')">
+          <h1 class="font-medium text-black">
+              Tech Hub
+          </h1>
+      </div>
+      <div class="linkSection font-regular text-70">
+          <ul class="navUl p10">
+              <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                  <i class="fa fa-home mr2"></i>
+                  Home</li>
+             
+              <li class="linkLi anchor">
+                  <i class="fa fa-info mr2"></i>
+                  About</li>
+              <li class="linkLi anchor">
+                    <i class="fa fa-cart-plus mr2"></i>
+                    Products</li>
+              <li
+              onclick="window.open('./account.html','_self')"
+              class="linkLi anchor">
+              <i class="fa fa-user mr2"></i>
+              Account</li>
+          </ul>
+      </div>
+  </nav>
+
+    <main class="container">
+
+      <!-- Left Column Laptop Image -->
+      <div class="left-column">
+        <img  id="blackimage" data-image="black" src="images/img1.png" alt="">
+        <img  id="blueimage" data-image="blue" src="images/img2.png" alt="">
+        <img  id="redimage" data-image="red" class="active nodrag" src="images/img3.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span class="font-bold" id="productname">Pahilo Laptop</span>
+          <h1 class="font-light"id="productmodel">Bau le Kindeko </h1>
+          <p class="font-regu" id="pro">This is a laptop for daily use not for gaming!</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <!-- <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- Ram Configuration -->
+          <div class="ram-config">
+            <span class="font-medium mb20 text-70">Ram Capasity</span>
+
+            <div class="ram-choose mt20">
+              <button>8GB</button>
+              <button>12GB</button>
+              <button>16GB</button>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span class="text-70 font-regular">1100$</span>
+          <button class="wfit button button-pink-outline anchor
+          noshadow ot0 rounded font-medium
+          ">
+            Add to cart
+            <i class="fa fa-arrow-right hoverShow"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="./js/product.js" charset="utf-8"></script>
+  </body>
+</html>
