@@ -7,8 +7,14 @@
 .w50{
     width: 50%;
 }
+.w20{
+    width: 20%;
+}
 .w100{
     width: 100%;
+}
+.wfit{
+    width: fit-content;
 }
 /* height control */
 .h45p{
@@ -29,6 +35,9 @@
 .mt10{
     margin-top: 10px;
 }
+.mt50{
+    margin-top: 50px;
+}
 .mb10{
     margin-bottom: 10px;
 }
@@ -43,6 +52,15 @@
 }
 .mr20{
     margin-right: 20px;
+}
+.ml20{
+    margin-right: 20px;
+}
+.ml50{
+    margin-left: 50px;
+}
+.ml80{
+    margin-left: 80px;
 }
 /* Outline control */
 
@@ -92,4 +110,44 @@
 
 .noselect{
     user-select: none;
+}
+
+/* Fade control */
+.fade{
+    animation: linear 0.3s fade;
+}
+@keyframes fade {
+    from{
+        opacity: 0.5;
+    }to{
+        opacity: 1;
+    }
+}
+/* Responsiveness */
+.responsive{
+    width: 100%;
+}
+
+
+/* Buttons */
+.button{
+    padding: 10px 40px 10px 40px;
+}
+
+.button-pink-outline{
+    background: none;
+    border: 1px solid #FF8E9A;
+}
+.button-pink-outline:hover{
+    background: linear-gradient(45deg,#FFBF00,#FF8E9A);
+    color: #fff;
+    transition: all ease-in-out 0.1s;
+
+}
+.hoverShow{
+    opacity: 0;
+}
+.button-pink-outline:hover .hoverShow{
+    opacity: 1;
+    transition: opacity ease-in-out 0.2s;
 }

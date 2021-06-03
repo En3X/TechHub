@@ -18,6 +18,7 @@
     text-align: center;
 }
 
+/*  Fonts */
 .font-medium{
     font-family: mmedium;
 }
@@ -31,7 +32,15 @@
 .font-italic{
     font-family: mitalic;
 }
+.font-light{
+    font-family: mlight;
+}
+.font-thin{
+    font-family: mthin;
+}
 
+
+/* Text size */
 .text-medium{
     font-size: 24px;
 }

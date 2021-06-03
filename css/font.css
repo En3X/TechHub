@@ -14,3 +14,11 @@
     font-family: mmedium;
     src: url("../fonts/montserrat_medium.ttf");
 }
+@font-face{
+    font-family: mlight;
+    src: url("../fonts/montserrat-light.ttf");
+}
+@font-face{
+    font-family: mthin;
+    src: url("../fonts/montserrat-thin.ttf");
+}
