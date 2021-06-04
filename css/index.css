@@ -25,3 +25,112 @@
     left: 99%;
     transform: translate(-99%,-99%);
 }
+.mobileImage{
+    display: none;
+    width: 100%;
+}
+.mobileViewImage{
+    width: 50%;
+    height: 50%;
+}
+
+@media screen and (max-width:800px) {
+    .mobileImage{
+        display: flex;
+        justify-content: center;
+    }
+    .product{
+        overflow: hidden;
+        margin: 0px 0px 0px 0px;
+        display: block;
+    }
+    .featuredProduct>.product>.textSection{
+        margin-right: 0px;
+        padding: 0px;
+        width: 100%;
+        text-align: justify;
+    }
+    .featuredProduct>.product>.imageSection{
+        display: none;
+    }
+    
+    .productsSection{
+        margin-top: 20px;
+    }
+    .laptops{
+        width: 100%;
+
+        text-align: center;
+    }
+    .components{
+        width: 100%;
+        text-align: center;
+    }
+    .pc{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.productsSection{
+    background-color: F5F5F5;
+    padding: 10px 20px 20px 20px;
+}
+.productListSection{
+    display: flex;
+    width: 100%;
+
+}
+.card{
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+.card:hover{
+    box-shadow: 0px 0px 5px #ccc;
+    transition: all ease 0.3s;
+}
+.card>img{
+    width: 70%;
+}
+
+.card>h3,.card>p{
+    padding: 10px;
+}
+
+.card>.pricetag{
+    padding: 10px;
+    color: tomato;
+}
+
+@media screen and (max-width:1000px) {
+    .card{
+        width: 20%;
+    }
+}
+@media screen and (max-width:500px) {
+    .card{
+        width: 70%;
+    }
+    .productListSection{
+        display: grid;
+        align-items: center;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .card{
+        width: 70%;
+    }
+    .productListSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

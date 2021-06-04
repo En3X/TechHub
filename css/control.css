@@ -1,9 +1,30 @@
 *,body,html{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 10px;
+
+}
+::-webkit-scrollbar-track{
+    background-color: #222;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: #707070;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
 /* width control */
 .w50{
     width: 50%;
@@ -20,6 +41,9 @@
 /* height control */
 .h45p{
     height: 45px;
+}
+.h100{
+    height: 100%;
 }
 /* Padding control */
 .p10{
@@ -62,6 +86,9 @@
 }
 .ml20{
     margin-left: 20px;
+}
+.ml40{
+    margin-left: 40px;
 }
 .ml50{
     margin-left: 50px;
@@ -159,6 +186,10 @@
 .button-pink-outline:hover .hoverShow{
     opacity: 1;
     transition: opacity ease-in-out 0.2s;
+}
+.button-pink-gradient{
+    background: linear-gradient(45deg,#FFBF00,#FF8E9A);
+    color: #fff;
 }
 .slow-zoom{
     overflow: hidden;
