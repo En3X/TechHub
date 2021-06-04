@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="./css/text-control.css">
         <link rel="stylesheet" href="./css/control.css">
-
+        <link rel="stylesheet" href="./css/navigation.css">
         <title>
             Signup or Login
         </title>
@@ -11,6 +11,46 @@
 
     </head>
     <body>
+        <nav class="nav p20">
+            <div class="logoSection anchor" onclick="window.open('index.html#home','_self')">
+                <h1 class="font-medium text-black">
+                    Tech Hub
+                </h1>
+            </div>
+            <div id="#navSearch" class="searchSection">
+                <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+                    <input
+                    placeholder="Search Tech Hub"
+                    class="
+                    font-regular
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    <button class="searchIcon button-pink-gradient anchor">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="linkSection font-regular text-70">
+                <ul class="navUl p10">
+                    <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                        <i class="fa fa-home mr2"></i>
+                        Home</li>
+                        <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                            <i class="fa fa-info mr2"></i>
+                            About</li>
+                    <li class="linkLi anchor" onclick="window.open('index.html#products','_self')">
+                        <i class="fa fa-cart-plus mr2"></i>
+                        Products</li>
+                    <!-- <li class="linkLi anchor">
+                        <i class="fa fa-envelope mr2"></i>
+                        Contact</li> -->
+                    <li
+                    onclick="window.open('./account.html','_self')"
+                    class="linkLi anchor">
+                    <i class="fa fa-user mr2"></i>
+                    Account</li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
             <div class="titlebar">
                 <div id="signupTitle"
@@ -56,7 +96,7 @@
                     type="submit"
             
                     id="signupbtn"
-                    class="w100 submitbtn h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
+                    class="w100 button-pink-outline h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
                     >Signup</button>
                 </form>
                 <p class="text-70 font-bold text-center mt10">
@@ -84,12 +124,11 @@
                    placeholder="Enter Password *"
                    required
                    >
-                
-
+                   
                    <button
                    type="submit"
                    id="loginbtn"
-                   class="w100 submitbtn h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
+                   class="w100 button-pink-outline h45p p10 mb10 text-70 font-medium bg1 anchor noshadow ot0 rounded"
                    >Login</button>
                </form>
                <p class="text-70 font-bold text-center mt10">

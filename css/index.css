@@ -53,23 +53,7 @@
     .featuredProduct>.product>.imageSection{
         display: none;
     }
-    
-    .productsSection{
-        margin-top: 20px;
-    }
-    .laptops{
-        width: 100%;
 
-        text-align: center;
-    }
-    .components{
-        width: 100%;
-        text-align: center;
-    }
-    .pc{
-        width: 100%;
-        text-align: center;
-    }
 }
 
 .productsSection{
@@ -114,7 +98,7 @@
         width: 20%;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     .card{
         width: 70%;
     }
@@ -122,15 +106,64 @@
         display: grid;
         align-items: center;
     }
+    .productsSection{
+        margin-top: 20px;
+    }
+    .laptops{
+        width: 100%;
+
+        text-align: center;
+    }
+    .components{
+        width: 100%;
+        text-align: center;
+    }
+    .pc{
+        width: 100%;
+        text-align: center;
+    }
     
 }
 @media screen and (max-width:500px) {
     .card{
-        width: 70%;
+        width: 80%;
     }
     .productListSection{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+}
+
+.searchForMobile{
+    display: none;
+    padding: 30px;
+}
+.searchForMobile>.searchSection>.searchform>input{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    nav>.searchSection{
+        display: none;
+    }
+    .searchForMobile{
+        display: block;
+    }
+    .searchForMobile>.searchSection{
+        width: 100%;
+    }
+    .searchForMobile>.searchSection>.searchform{
+        width: 100%;
+    }
+    .searchForMobile>.searchSection>.searchform>input{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 5px #ccc;
+    }
+    
 }

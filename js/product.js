@@ -22,14 +22,6 @@ const param = new URLSearchParams(url);
 productIdAvailable = true;
 var productid = param.get("productid");
 
-// if(!param.has("productid") || param.get("productid") != null || param.get("productid") != undefined){
-//   error = "Page not found";
-//   des = "Either the page does not exists<br>Or, the product id is missing!";
-//   showErrorSection(error,des);
-// }else{
-//   productIdAvailable = true;
-//   var productid = param.get("productid");
-// }
 
 
 if(productIdAvailable){
@@ -74,13 +66,3 @@ function showErrorSection(title,description){
   errorTitle.textContent = title;
   errordescription.innerHTML = description;
 }
-
-
-fetch('https://extreme-ip-lookup.com/json/')
-.then( res => res.json())
-.then(response => {
-    console.log("Country: ", response.city);
- })
- .catch((data, status) => {
-    console.log('Request failed');
- })
