@@ -9,10 +9,22 @@
     </head>
     <body class="noselect">
         <nav class="nav p20">
-            <div class="logoSection anchor" onclick="window.open('index.html','_self')">
+            <div class="logoSection anchor" onclick="window.open('index.html#home','_self')">
                 <h1 class="font-medium text-black">
                     Tech Hub
                 </h1>
+            </div>
+            <div class="searchSection">
+                <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+                    <input
+                    placeholder="Search Tech Hub"
+                    class="
+                    font-regular
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    <button class="searchIcon button-pink-gradient anchor">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
             <div class="linkSection font-regular text-70">
                 <ul class="navUl p10">
@@ -22,7 +34,7 @@
                         <li class="linkLi anchor" onclick="window.open('index.html','_self')">
                             <i class="fa fa-info mr2"></i>
                             About</li>
-                    <li class="linkLi anchor">
+                    <li class="linkLi anchor" onclick="window.open('index.html#products','_self')">
                         <i class="fa fa-cart-plus mr2"></i>
                         Products</li>
                     <!-- <li class="linkLi anchor">
@@ -38,8 +50,12 @@
         </nav>
 
         <main>
-            <section class="featuredProduct w100">
+            <section id="home" class="featuredProduct w100 h100">
                 <div class="product ml20 p20 fade" id="product1">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./img/laptop_PNG101762.png" alt="">
+                    </div>
+                    <br>
                    <div class="textSection mr20 p20 w50">
                        <h2 class="font-regular mb10">
                            Mero Pahilo laptop
@@ -49,7 +65,7 @@
                         </h4>
                        <button class="wfit button button-pink-outline anchor
                        noshadow ot0 rounded font-medium
-                       " onclick="window.open('product.html','_self')">Go to product
+                       " onclick="window.open('product.html?productid=101','_self')">Go to product
                         <i class="fa fa-arrow-right hoverShow"></i>
                     </button>
                    </div>
@@ -59,6 +75,9 @@
                 </div>
 
                 <div class="product fade ml20 p20" id="product2">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./img/laptop_PNG101762.png" alt="">
+                    </div>
                     <div class="textSection mr20 p20 w50">
                         <h2 class="font-regular mb10">
                             Mero Dosro laptop
@@ -68,7 +87,7 @@
                          </h4>
                         <button class="wfit button button-pink-outline anchor
                         noshadow ot0 rounded font-medium
-                        "  onclick="window.open('product.html','_self')">Go to product
+                        "  onclick="window.open('product.html?productid=102','_self')">Go to product
                          <i class="fa fa-arrow-right hoverShow"></i>
                      </button>
                     </div>
@@ -78,6 +97,9 @@
                  </div>
 
                  <div class="product fade ml20 p20" id="product3">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./img/laptop_PNG101762.png" alt="">
+                    </div>
                     <div class="textSection mr20 p20 w50">
                         <h2 class="font-regular mb10">
                             Mero Tesro laptop
@@ -87,7 +109,7 @@
                          </h4>
                         <button class="wfit button button-pink-outline anchor
                         noshadow ot0 rounded font-medium
-                        " onclick="window.open('product.html','_self')">Go to product
+                        " onclick="window.open('product.html?productid=103','_self')">Go to product
                          <i class="fa fa-arrow-right hoverShow"></i>
                      </button>
                     </div>
@@ -99,6 +121,241 @@
                     <i class="fa fa-pause anchor" id="pauseIcon" onclick="pauseCarousal()" title="Pause/Play Carousal"></i>
                    <br><i class="fa fa-forward mt20 anchor" title="Next" onclick="nextCarousal()"></i>
                  </div>
+            </section>
+
+            <section id="products" class="productsSection">
+                <div class="laptops mt50">
+                    <h1 class="font-light mb20">Laptops And Notebooks</h1>
+                    <div class="productListSection">
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                    </div>
+                    <div class="productListSection">
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="pc mt50">
+                    <h1 class="font-light mb20">Personal Computers</h1>
+                    <div class="productListSection">
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="components mt50">
+                    <h1 class="font-light mb20">Tech Components</h1>
+                    <div class="productListSection">
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                        <div class="card anchor">
+                            <img id="productImage" src="./images/img2.png" alt="">
+                            <h3 class="font-light text-center" id="productTitle">Dell Laptop</h2>
+                            <p class="font-regular" id="productDescription">
+                                <small>The best laptop for business purposes. Buy now to get exiciting deal.
+                                </small>
+                            </p>
+                            <span class="font-regular pricetag" id="price">
+                                USD 1100
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hearFromUs">
+
             </section>
         </main>
     </body>
