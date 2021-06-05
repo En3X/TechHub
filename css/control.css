@@ -181,6 +181,17 @@ img{
     background: linear-gradient(45deg,#FFBF00,#FF8E9A);
     color: #fff;
     transition: all ease-in-out 0.1s;
+}
+
+.button-green-outline{
+    background: none;
+    border: 1px solid #00F383;
+}
+.button-green-outline:hover{
+    background: linear-gradient(45deg,#00F383,#CBE100);
+    color: #fff;
+    border: hidden;
+    transition: all ease-in-out 0.1s;
 
 }
 .hoverShow{

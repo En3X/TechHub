@@ -1,16 +1,11 @@
 .product{
     display: flex;
+    margin-top: 2%;
     justify-content: space-between;
 }
-
 .productImageFeature{
-    display: relative;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-
+    width: 70%;
 }
-
 .textSection{
     display: grid;
     align-items: center;
@@ -81,13 +76,19 @@
     transition: all ease 0.3s;
 }
 .card>img{
+    margin-top: 20px;
     width: 70%;
 }
 
 .card>h3,.card>p{
     padding: 10px;
 }
-
+.priceTagGreen{
+    color: #75EB4C;
+}
+.priceTagPink{
+    color: #FF0274;
+}
 .card>.pricetag{
     padding: 10px;
     color: tomato;
@@ -166,4 +167,77 @@
         box-shadow: 0px 0px 5px #ccc;
     }
     
+}
+
+
+/* News section */
+.techHubCustoms{
+    padding: 40px 0px 10px 20px;
+}
+
+.newsSection{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customTextSection{
+    display: absolute;
+    bottom: 70%;
+    padding-left: 40px;
+    margin: 70px 20px 20px 20px;
+}
+.customImageSection{
+    margin-top: 50px;
+    width: 50%;
+}
+.customImageSection>img{
+    width: 100%;
+}
+.learnMore{
+    margin-top: 40px;
+}
+@media screen and (max-width:600px) {
+    .customImageSection{
+        margin-top: 50px;
+    }
+    .customTextSection{
+        padding: 0px;
+        margin: 0px;
+    }
+    .newsSection{
+        text-align: center;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .learnMore{
+        text-align: center;
+    }
+}
+
+.footer{
+    background-color: #282828;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column{
+    width: 25%;
+}
+
+.footer>.column>ul>li{
+    margin-top: 20px;
+    cursor: pointer;
+    color: #f5f5f5;
+}
+
+.copy{
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }

@@ -2,7 +2,15 @@
 .anchor{
     cursor: pointer;
 }
-
+.text-c1{
+    color: #C1C1C1;
+}
+.text-46{
+    color: #464646;
+}
+.text-53{
+    color: #535353;
+}
 .text-white{
     color: white;
 }

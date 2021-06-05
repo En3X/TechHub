@@ -1,4 +1,4 @@
-var productsList =[
+[
     {
         "id":101,
         "name": "XPS 12 2-in-1 Laptop",
@@ -27,11 +27,11 @@ var productsList =[
     },
     {
         "id":103,
-        "name": "ALIENWARE M15 Gaming Laptop",
+        "name": "ALIENWARE M15 RYZEN™ EDITION R5 GAMING LAPTOP",
         "company":"Dell",
         "shortDes": "AMD Ryzen R9 5900HX Processor Powered",
         "longDes":"With iconic designs, high-performance gaming and premium features, Alienware delivers the most immersive experiences.        ",
-        "img": "productImg/product103.png",
+        "img": "productImg/product103.webp",
         "price": 2379.99,
         "storage": "1TB PCIe M.2 SSD",
         "graphics": "NVIDIA® GeForce RTX™ 3070 8GB GDDR6",
@@ -76,19 +76,5 @@ var productsList =[
         "graphics": "NVIDIA® GeForce RTX™ 3060 6GB GDDR6",
         "os": "Windows 10 Home English",
         "catagory": "Laptop"
-    },
-    {
-        "id":106,
-        "name": "ALIENWARE M17 R4 GAMING LAPTOP",
-        "company":"Dell",
-        "shortDes": "10th Generation Intel® Core™ i7-10870H Powered",
-        "longDes":"With iconic designs, high-performance gaming and premium features, Alienware delivers the most immersive experiences.",
-        "img": "productImg/product106.webp",
-        "price": 1869.99,
-        "storage": "",
-        "graphics": "NVIDIA® GeForce RTX™ 3060 6GB GDDR6",
-        "os": "Windows 10 Home English",
-        "catagory": "components"
     }
-    // Components = components, PC = PC, Laptop = Laptop
 ]

@@ -31,18 +31,19 @@ function setupProduct(){
   console.log(productid);
   // Setup product details
   productname = document.querySelector("#productname");
-  productmodel = document.querySelector("#productmodel");
-  productdescription = document.querySelector("#description");
+  company = document.querySelector("#company");
+  productdescription = document.querySelector("#shortDescription");
   productimage = document.querySelector("#productimage");
-
+  price = document.querySelector("#price");
 
   hasProduct = false;
   for(i=0;i<products.length;++i){
     if(productid == products[i].id){
       hasProduct = true;
       productname.textContent = products[i].name;
-      productmodel.textContent = products[i].model;
-      productdescription.textContent = products[i].catagory;
+      company.textContent =  "By "+products[i].company;
+      productdescription.textContent = products[i].shortDes;
+      price.textContent = "$ "+products[i].price;
       productimage.src = products[i].img;
       break;
     }
