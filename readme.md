@@ -40,8 +40,8 @@
 | Other Pages UI                      | All                 |
 | Main JS Integration (Functionality) | Main - Manish / All |
 
-- [ ] Ayush - Signup / Login
-- [ ] Rijan - Home page
-- [ ] Sahil - Product page
+- [ ] Signup / Login => Modification Required
+- [x] Manish - Home page
+- [x] Sahil / Manish - Product page
 - [ ] Manish & All - JS Integration
-- [ ] Optional - About us
+- [ ] Ayush- About us

@@ -52,7 +52,7 @@
 }
 
 .productsSection{
-    background-color: F5F5F5;
+    background-color: #F5F5F5;
     padding: 10px 20px 20px 20px;
 }
 .productListSection{
@@ -215,29 +215,4 @@
     .learnMore{
         text-align: center;
     }
-}
-
-.footer{
-    background-color: #282828;
-    color: #fff;
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.column{
-    width: 25%;
-}
-
-.footer>.column>ul>li{
-    margin-top: 20px;
-    cursor: pointer;
-    color: #f5f5f5;
-}
-
-.copy{
-    background-color: #222;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 }

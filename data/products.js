@@ -10,10 +10,12 @@ var productsList =[
         "storage": "512GB PCIe NVMe x4 SSD",
         "graphics": "Intel® Iris Xe Graphics",
         "os": "Windows 10 Home English",
-        "catagory": "Laptop"
+        "catagory": "Laptop",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard"
     },
     {
         "id":102,
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard",
         "name": "Inspiron 14 2-in-1 Laptop",
         "company":"Dell",
         "shortDes": "11th Generation Intel® Core™ i5-1135G7 Processor Powered",
@@ -34,9 +36,12 @@ var productsList =[
         "img": "productImg/product103.png",
         "price": 2379.99,
         "storage": "1TB PCIe M.2 SSD",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard",
         "graphics": "NVIDIA® GeForce RTX™ 3070 8GB GDDR6",
         "os": "Windows 10 Home English",
-        "catagory": "Laptop"
+        "catagory": "Laptop",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard"
+
     },
     {
         "id":104,
@@ -47,6 +52,7 @@ var productsList =[
         "img": "productImg/product104.webp",
         "price": 1399.99,
         "storage": "1TB M.2 PCIe NVMe SSD",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard",
         "graphics": "NVIDIA® GeForce RTX™ 3060 6GB GDDR6",
         "os": "Windows 10 Home English",
         "catagory": "Laptop"
@@ -60,6 +66,7 @@ var productsList =[
         "img": "productImg/product105.webp",
         "price": 229.99,
         "storage": "16GB eMMC Hard Drive",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard",
         "graphics": "Intel Integrated",
         "os": "Windows 10 Home English",
         "catagory": "Laptop"
@@ -73,22 +80,10 @@ var productsList =[
         "img": "productImg/product106.webp",
         "price": 1869.99,
         "storage": "256GB PCIe M.2 SSD",
+        "ram":"8GB 4267MHz LPDDR4x Memory Onboard",
         "graphics": "NVIDIA® GeForce RTX™ 3060 6GB GDDR6",
         "os": "Windows 10 Home English",
         "catagory": "Laptop"
-    },
-    {
-        "id":106,
-        "name": "ALIENWARE M17 R4 GAMING LAPTOP",
-        "company":"Dell",
-        "shortDes": "10th Generation Intel® Core™ i7-10870H Powered",
-        "longDes":"With iconic designs, high-performance gaming and premium features, Alienware delivers the most immersive experiences.",
-        "img": "productImg/product106.webp",
-        "price": 1869.99,
-        "storage": "",
-        "graphics": "NVIDIA® GeForce RTX™ 3060 6GB GDDR6",
-        "os": "Windows 10 Home English",
-        "catagory": "components"
     }
     // Components = components, PC = PC, Laptop = Laptop
 ]

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./css/text-control.css">
     <link href="./css/navigation.css" rel="stylesheet">
     <link href="./css/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/control.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./data/products.js"></script>
@@ -59,58 +60,151 @@
       </h4>
     </main>
 
-    <main id="mainContainer" class="container">
-
-      <!-- Left Column Laptop Image -->
-      <div class="left-column">
-        <!-- <img  id="blackimage" data-image="black" src="images/img1.png" alt="">
-        <img  id="blueimage" data-image="blue" src="images/img2.png" alt=""> -->
-        <img  id="productimage" class="active nodrag" src="#" alt="">
-      </div>
-
-
-      <!-- Right Column -->
-      <div class="right-column">
-        <!-- Product Description -->
-        <div class="product-description">
-          <span class="font-bold" id="productname"></span>
-          <h2 class="font-light text-70"id="company"></h1>
-          <p class="font-regu" id="shortDescription"></p>
+    <main class="productFoundSection">
+      <section class="productDisplaySection">
+        <div class="imageSection">
+          <img src="./productImg/product106.webp" alt="" id="productimage">
         </div>
-
-        <!-- Product Configuration -->
-        <div class="product-configuration">
-
-          <!-- Ram Configuration -->
-          <div class="ram-config">
-            <span class="font-medium mb20 text-70">Ram Capasity</span>
-
-            <div class="ram-choose mt20">
-              <button>8GB</button>
-              <button>12GB</button>
-              <button>16GB</button>
-            </div>
-            
-            
+        <div class="introTextSection">
+          <h4 class="font-regular text-70 mb20" id="company">
+            Dell
+          </h4>
+          <h3 class="font-medium" id="productname">
+            XPS 12 2-in-1 Laptop
+          </h3>
+          <div title="Rate this product" class="rating mt10 mb20 anchor">
+            <i onclick="rate(1)" class="ratingStar fa fa-star mr2" id="rating1"></i>
+            <i onclick="rate(2)" class="ratingStar fa fa-star mr2" id="rating2"></i>
+            <i onclick="rate(3)" class="ratingStar fa fa-star mr2" id="rating3"></i>
+            <i onclick="rate(4)" class="ratingStar fa fa-star mr2" id="rating4"></i>
+            <i onclick="rate(5)" class="ratingStar fa fa-star mr2" id="rating5"></i>
+            | <small class="font-light">Rate</small>
           </div>
-        </div>
+          <p class="inStock font-light mb20">
 
-        <!-- Product Pricing -->
-        <div class="product-price">
-          <span id="price" class="text-70 font-regular"></span>
-          <button class="wfit button button-pink-outline anchor
-          noshadow ot0 rounded font-medium
-          " onclick="window.open('./account.html')">
+              <i class="fa fa-check"></i> In Stock
+          </p>
+          <h3 id="priceTag" class="product-price font-regular mb20" >
+            <span id="price" class="text-medium"></span>
+            <span class="text-small text-center text-70">
+              <p>Save $ 100</p>
+              <span class="text-tomato"><del id="nonDiscountPrice">$ 1400</del></span>
+            </span>
+          </h3>
+          <p class="font-regular mb10">Payment Methods</p>
+          <ul class="paymentList text-mid-small font-light text-70">
+            <li>
+              <i class="fa fa-paypal"></i>
+              Paypal</li>
+            <li>
+              <i class="fa fa-cc-mastercard"></i>
+              Mastercard</li>
+            <li>
+              <i class="fa fa-cc-visa"></i>
+              Visa Card</li>
+              <li>
+                <i class="fa fa-credit-card"></i>
+                Credit Card</li>
+          </ul>
+          <button class="button button-pink-outline mt20 w100 anchor">
+            <i class="fa fa-cart-plus mr10"></i>
             Add to cart
-            <i class="fa fa-arrow-right hoverShow"></i>
           </button>
         </div>
-      </div>
-      
-    </main>
+      </section>
+      <section class="keyFeaturesSection">
+        <h3 class="font-regular">
+          Key Features
+        </h3>
+          <div class="contentsKeyFeatures">
+            <div id="description" class="mt20 font-light text-mid-small productDescription">
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
-    <script src="./js/product.js" charset="utf-8"></script>
+            </div>
+            <div class="specs text-70">
+              <!-- <h3 class="font-regular text-mid-small">
+                Specs of <span id="catagory"></span>
+              </h3> -->
+              <ul class="specsList font-bold text-mid-small">
+                <li>
+                  <img title="Processor" class="icon question" src="./icons/processor.svg" alt="">
+                  <span id="processor"></span>
+                </li>
+                <li>
+                  <img title="RAM Capacity" class="icon question" src="./icons/ram.svg" alt="">
+                  <span id="ram"></span>
+                </li>
+                <li>
+                  <img title="Video RAM / Graphics Card" class="icon question" src="./icons/graphics.svg" alt="">
+                  <span id="graphics"></span>
+                </li>
+                <li>
+                  <img title="Storage Capacity" class="icon question" src="./icons/hdd.svg" alt="">
+                  <span id="storage"></span>
+                </li>
+                <li>
+                  <img title="Operating System" class="icon question" src="./icons/os.svg" alt="">
+                  <span id="os"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      <section class="someOtherProducts">
+        <div class="laptops mt50" id="similarProducts">
+          <h1 class="font-light mb20">You might also like</h1>
+          
+      </div>
+      </section>
+
+    </main>
+    <div class="showInfo font-regular noOpacity" id="infoCard">
+      Thank you for rating the product
+     </div>
+
+
+     <!-- Footer -->
+      <section class="footer">
+        <section class="column">
+            <h3 class="font-medium mb20">
+                About
+            </h3>
+            <p class="font-regular">
+                Tech Hub, an online gadgets store that provides you with best quality products. You can buy the product you desire at minimum cost and without no extra fee. We deliver your products to your doorstep.
+                <br><br>
+                Wanna know more about us?
+                <br><br>
+                <span class="anchor">Check out our About Us Page</span>
+            </p>
+        </section>
+        <section class="column">
+            <h3 class="font-medium mb20">
+                Catagories
+            </h3>
+            <ul class="font-regular">
+                <li>Laptops</li>
+                <li>PC</li>
+                <li>PC Components
+                </li>
+                <li>Laptop Components</li>
+                <li>Tech Hub Custom</li>
+            </ul>
+        </section>
+        <section class="column">
+            <h3 class="font-medium mb20">
+                Pages
+            </h3>
+            <ul class="font-regular">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Search</li>
+                <li>Signup / Login</li>
+            </ul>
+        </section>
+    </section>
+    <section class="copy font-light text-small">
+        Copyright &copy; <span id="year"></span>, All rights reserved 
+    </section>
   </body>
+  <script src="./js/product.js" charset="utf-8"></script>
 </html>

@@ -2,6 +2,10 @@
 .anchor{
     cursor: pointer;
 }
+
+.question{
+    cursor:help;
+}
 .text-c1{
     color: #C1C1C1;
 }
@@ -20,7 +24,9 @@
 .text-black{
     color: #000000;
 }
-
+.text-tomato{
+    color: tomato;
+}
 .text-center{
     text-align: center;
 }
@@ -54,4 +60,8 @@
 
 .text-small{
     font-size: 12px;
+}
+
+.text-mid-small{
+    font-size: 14px;
 }
