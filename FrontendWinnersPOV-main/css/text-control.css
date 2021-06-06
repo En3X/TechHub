@@ -1,0 +1,57 @@
+@import url("./font.css");
+.anchor{
+    cursor: pointer;
+}
+.text-c1{
+    color: #C1C1C1;
+}
+.text-46{
+    color: #464646;
+}
+.text-53{
+    color: #535353;
+}
+.text-white{
+    color: white;
+}
+.text-70{
+    color: #707070;
+}
+.text-black{
+    color: #000000;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*  Fonts */
+.font-medium{
+    font-family: mmedium;
+}
+.font-bold{
+    font-family: mbold;
+}
+
+.font-regular{
+    font-family: mregular;
+}
+.font-italic{
+    font-family: mitalic;
+}
+.font-light{
+    font-family: mlight;
+}
+.font-thin{
+    font-family: mthin;
+}
+
+
+/* Text size */
+.text-medium{
+    font-size: 24px;
+}
+
+.text-small{
+    font-size: 12px;
+}

@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/control.css">
+        <link rel="stylesheet" href="css/text-control.css">
+        <link rel="stylesheet" href="./css/navigation.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Tech Hub</title>
+    </head>
+    <body class="noselect">
+        <nav class="nav p20">
+            <div class="logoSection anchor" onclick="window.open('index.html#home','_self')">
+                <h1 class="font-medium text-black">
+                    Tech Hub
+                </h1>
+            </div>
+            <div id="#navSearch" class="searchSection">
+                <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+                    <input
+                    placeholder="Search Tech Hub"
+                    class="
+                    font-regular
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    <button class="searchIcon button-pink-gradient anchor">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="linkSection font-regular text-70">
+                <ul class="navUl p10">
+                    <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                        <i class="fa fa-home mr2"></i>
+                        Home</li>
+                        <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                            <i class="fa fa-info mr2"></i>
+                            About</li>
+                    <li class="linkLi anchor" onclick="window.open('index.html#products','_self')">
+                        <i class="fa fa-cart-plus mr2"></i>
+                        Products</li>
+                    <!-- <li class="linkLi anchor">
+                        <i class="fa fa-envelope mr2"></i>
+                        Contact</li> -->
+                    <li
+                    onclick="window.open('./account.html','_self')"
+                    class="linkLi anchor">
+                    <i class="fa fa-user mr2"></i>
+                    Account</li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section id="home" class="featuredProduct w100 h100">
+                <div class="product ml20 p20 fade" id="product1">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./productImg/product101.webp" alt="">
+                    </div>
+                    <br>
+                   <div class="textSection mr20 p20 w50">
+                       <h2 id="featuredProductOneTitle" class="fproductTitle font-regular mb10">
+                       </h2>
+                       <h4 id="featuredProductOneDescription" class="fproductDescription font-thin mb20">
+                        </h4>
+                        <p class="font-medium priceTagPink fprice">
+                            
+                        </p>
+                        <br>
+                       <button class="wfit button button-pink-outline anchor
+                       noshadow ot0 rounded font-medium
+                       " onclick="window.open('product.html?productid=101','_self')">Go to product
+                        <i class="fa fa-arrow-right hoverShow"></i>
+                    </button>
+                   </div>
+                    <div class="imageSection w50 mt50 ml80">
+                        <img id="zoomer" src="./productImg/product101.webp" class="productImageFeature nodrag anchor" alt="">
+                    </div>
+                </div>
+
+                <div class="product fade ml20 p20" id="product2">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./images/img3.png" alt="">
+                    </div>
+                    <br>
+
+                    <div class="textSection mr20 p20 w50">
+                        <h2 class="font-regular mb10 fproductTitle" >
+                            Mero Dosro laptop
+                        </h2>
+                        <h4 class="font-thin mb20 fproductDescription">
+                             Incididunt laboris ex consequat Lorem mollit aliqua eiusmod aute veniam. Tempor sint nostrud labore dolore officia est consequat. Culpa deserunt eiusmod eu sunt magna qui do exercitation eiusmod ea ut qui officia. Quis ea nisi minim pariatur dolor dolor officia qui.
+                         </h4>
+                         <p class="font-medium priceTagPink fprice">
+                            
+                        </p>
+                        <br>
+                        <button class="wfit button button-pink-outline anchor
+                        noshadow ot0 rounded font-medium
+                        "  onclick="window.open('product.html?productid=102','_self')">Go to product
+                         <i class="fa fa-arrow-right hoverShow"></i>
+                     </button>
+                    </div>
+                     <div class="imageSection w50 mt50 ml80">
+                         <img id="zoomer" src="./images/img3.png" class="productImageFeature nodrag anchor" alt="">
+                     </div>
+                 </div>
+
+                 <div class="product fade ml20 p20" id="product3">
+                    <div class="mobileImage">
+                        <img class="mobileViewImage" src="./img/laptop_PNG101762.png" alt="">
+                    </div>
+                    <br>
+
+                    <div class="textSection mr20 p20 w50">
+                        <h2 class="font-regular mb10 fproductTitle" >
+                            Mero Tesro laptop
+                        </h2>
+                        <h4 class="font-thin mb20 fproductDescription">
+                             Incididunt laboris ex consequat Lorem mollit aliqua eiusmod aute veniam. Tempor sint nostrud labore dolore officia est consequat. Culpa deserunt eiusmod eu sunt magna qui do exercitation eiusmod ea ut qui officia. Quis ea nisi minim pariatur dolor dolor officia qui.
+                         </h4>
+                         <p class="font-medium priceTagPink fprice">
+                            
+                        </p>
+                        <br>
+                        <button class="wfit button button-pink-outline anchor
+                        noshadow ot0 rounded font-medium
+                        " onclick="window.open('product.html?productid=103','_self')">Go to product
+                         <i class="fa fa-arrow-right hoverShow"></i>
+                     </button>
+                    </div>
+                     <div class="imageSection w50 mt50 ml80">
+                         <img id="zoomer" src="./productImg/product101.webp" class="productImageFeature nodrag anchor" alt="">
+                     </div>
+                 </div>
+                 <div class="carousalControls text-70 font-medium">
+                    <i class="fa fa-pause anchor" id="pauseIcon" onclick="pauseCarousal()" title="Pause/Play Carousal"></i>
+                   <br><i class="fa fa-forward mt20 anchor" title="Next" onclick="nextCarousal()"></i>
+                 </div>
+            </section>
+
+            <section id="products" class="productsSection">
+                <div align="center" class="searchForMobile">
+                    <span class="font-regular">
+                        Explore products in Tech Hub <br>
+                        Or make a search for specific product!
+                    </span>
+                    <div class="searchSection mt10">
+                        <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+                            <input
+                            placeholder="Search Tech Hub"
+                            class="font-regular
+                            searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                            <br>
+                            <button class="searchIcon button-pink-gradient mt10 anchor">
+                                Make a search
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="laptops mt50" id="laptop">
+                    <h1 class="font-light mb20">Laptops And Notebooks</h1>
+                    <div id="laptopNotFound" class="notFound text-70 font-light hidden">
+                        404 : Laptops not found
+                    </div>
+                    
+                </div>
+                <div class="pc mt50" id="pc">
+                    <h1 class="font-light mb20">Personal Computers</h1>
+                    <div id="pcNotFound" class="notFound text-70 font-light hidden">
+                        404 : PC not found
+                    </div>
+                </div>
+                <div id="components" class="components mt50">
+                    <h1 class="font-light mb20">Tech Components</h1>
+                    <div id="componentNotFound" class="notFound text-70 font-light hidden">
+                        404 : Components not found
+                    </div>
+                </div>
+            </section>
+
+            <section class="techHubCustoms">
+                <h2 class="font-light">
+                    Tech Hub Specials
+                </h2>
+                <div class="newsSection mt50">  
+                    <div class="customImageSection">
+                        <img src="./productImg/custom130.png" alt="">
+
+                    </div>
+                    <div class="customTextSection mr20">
+                        <p class="font-medium text-46 mt50 mb10">
+                            Tech Hub Custom Build Gaming PC
+                        </p>
+                        <p class="text-medium text-70 font-regular mb10">
+                            Explore new era of gaming
+                        </p>
+                        <p class="text-53 font-regular">
+                            Tech Hub introduces new custom built gaming PC's. Get the framerate that will blow your mind.
+                            <br><br>
+                            Built with best quality components in existance!
+                        </p>
+                        <p class="priceTagPink font-regular mt10">
+                            Starting at $ 1400
+                        </p>
+                        <div class="learnMore">
+                            <button class="anchor button button-pink-outline">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsSection mt50">  
+                    <div class="customTextSection mr20">
+                        <p class="font-medium text-46 mt50 mb10">
+                            Tech Hub Gaming Keyboards
+                        </p>
+                        <p class="text-medium text-70 font-regular mb10">
+                            Take your gaming to next level
+                        </p>
+                        <p class="text-53 font-regular">
+                            With innovative design and amazing functionality, 
+                            <br>
+                            Tech Hub releases its new
+                            Gaming meahanical keyboards in market. <br>
+                            <br>
+                            Now available in Tech Hub Store.
+                        </p>
+                        <p class="priceTagGreen font-regular mt10">
+                            Starting at $ 90
+                        </p>
+                        <div class="learnMore">
+                            <button class="anchor button button-green-outline">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                    <div class="customImageSection">
+                        <img src="./productImg/custom131.png" alt="">
+
+                    </div>
+                </div>
+
+                <div class="newsSection mt50">  
+                    <div class="customImageSection">
+                        <img src="./productImg/custom132.png" alt="">
+
+                    </div>
+                    <div class="customTextSection mr20">
+                        <p class="font-medium text-46 mt50 mb10">
+                            Tech Hub Gaming Mouse
+                        </p>
+                        <p class="text-medium text-70 font-regular mb10">
+                            Tap that headshot with 4800 DPI
+                        </p>
+                        <p class="text-53 font-regular">
+                            The new gaming mouse with 5 buttons and 2 DPI configuration button. <br>
+                            With customizable DPI, tap that head with smooth flick!
+                        </p>
+                        <p class="priceTagPink font-regular mt10">
+                            Starting at $ 80
+                        </p>
+                        <div class="learnMore">
+                            <button class="anchor button button-pink-outline">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <section class="column">
+                    <h3 class="font-medium mb20">
+                        About
+                    </h3>
+                    <p class="font-regular">
+                        Tech Hub, an online gadgets store that provides you with best quality products. You can buy the product you desire at minimum cost and without no extra fee. We deliver your products to your doorstep.
+                        <br><br>
+                        Wanna know more about us?
+                        <br><br>
+                        <span class="anchor">Check out our About Us Page</span>
+                    </p>
+                </section>
+                <section class="column">
+                    <h3 class="font-medium mb20">
+                        Catagories
+                    </h3>
+                    <ul class="font-regular">
+                        <li>Laptops</li>
+                        <li>PC</li>
+                        <li>PC Components
+                        </li>
+                        <li>Laptop Components</li>
+                        <li>Tech Hub Custom</li>
+                    </ul>
+                </section>
+                <section class="column">
+                    <h3 class="font-medium mb20">
+                        Pages
+                    </h3>
+                    <ul class="font-regular">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Search</li>
+                        <li>Signup / Login</li>
+                    </ul>
+                </section>
+            </section>
+            <section class="copy font-light text-small">
+                Copyright &copy; <span id="year"></span>, All rights reserved 
+            </section>
+        </main>
+    </body>
+    <script src="./data/products.js"></script>
+    <script src="./js/productCardConfiguration.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var date = new Date();
+        document.querySelector("#year").textContent = date.getFullYear();
+    </script>
+</html>
