@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/control.css">
+        <link rel="stylesheet" href="css/text-control.css">
+        <link rel="stylesheet" href="./css/navigation.css">
+        <link rel="stylesheet" href="./css/search.css">
+        <link rel="stylesheet" href="./css/product.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Fontawesome</title>
+    </head>
+    <body>
+        <nav class="nav p20">
+            <div class="logoSection">
+                <h1 class="font-medium text-black">
+                    Tech Hub
+                </h1>
+            </div>
+            <div class="linkSection font-regular text-70">
+                <ul class="navUl p10">
+                    <li class="linkLi anchor">
+                        <i class="fa fa-home"></i>
+                        Home</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-cart-plus"></i>
+                        Products</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-envelope"></i>
+                        Contact</li>
+                    <li
+                    onclick="window.open('./account.html','_target')"
+                    class="linkLi anchor">
+                    <i class="fa fa-user"></i>
+                    Account</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mt20 ml20 text-black font-regular">
+          <h1 class="text-70">Search results....</h1>
+          <hr class="mt10 mr10 mb10" style="background-color: #ccc;">
+        </div>
+
+        <div class="w100" style="display: flex;">
+          <div class="w20 text-black filter vh100">
+            <h3 class="ml10 font-bold">Search Filter</h3>
+            <div class="ml20 text-black font-regular"><br>
+              <h4 class="text-small">By Brand</h4>
+              <input type="checkbox" name="Thub" value="thub" class="ml10 p10">
+              <label for="Dell" class="text-small">TechHub</label><br>
+              <input type="checkbox" name="Dell" value="dell" class="ml10 p10">
+              <label for="Dell" class="text-small">Dell</label><br>
+              <input type="checkbox" name="HP" value="hp" class="ml10 p10">
+              <label for="HP" class="text-small">HP</label><br>
+              <input type="checkbox" name="Asus" value="asus" class="ml10 p10">
+              <label for="Asus" class="text-small">Asus</label><br>
+            </div>
+            <div class="ml20 text-black font-regular"><br>
+              <h4 class="text-small">By Processor</h4>
+              <input type="checkbox" name="Intel" value="intel" class="ml10 p10">
+              <label for="Dell" class="text-small">Intel</label><br>
+              <input type="checkbox" name="Ryzen" value="ryzen" class="ml10 p10">
+              <label for="HP" class="text-small">Ryzen</label><br>
+            </div>
+            <div class="ml20 text-black font-regular"><br>
+              <h4 class="text-small">Price Range</h4>
+              <input type="number" name="minr" class="ml10 p10 w40 mt10 h10p" placeholder="min">
+              <input type="number" name="maxr" class="ml10 p10 w40 mt10 h10p" placeholder="max">
+            </div><br>
+            <div class="">
+              <button type="submit" align="center" name="button" class="button wfit rounded ot0 anchor ml20 p10">Search</button>
+            </div>
+          </div>
+          <div class="w100 vh100 sr-pro prod ml30 spacebetween">
+            <div class="">
+
+            </div>
+          </div>
+          </div>
+
+    </body>
+</html>

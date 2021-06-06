@@ -1,0 +1,19 @@
+/* Filter */
+.filter:hover{
+  background-color: #fff;
+}
+.filter {
+
+  box-shadow: 3px 3px #ccc;
+  height: 100vh;
+  position: absolute;
+}
+/* Product place */
+.prod{
+  float: right;
+  background: #f5f5f5;
+}
+.pr-card{
+  width: 300px;
+  background-color: #fff;
+}

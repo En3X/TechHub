@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/text-control.css">
+    <link href="./css/navigation.css" rel="stylesheet">
+    <link href="./css/product.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/control.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./data/products.js"></script>
+  </head>
+
+  <body class="noselect">
+    <nav class="nav p20">
+      <div class="logoSection anchor" onclick="window.open('index.html#home','_self')">
+          <h1 class="font-medium text-black">
+              Tech Hub
+          </h1>
+      </div>
+
+      <div class="searchSection">
+        <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+            <input
+            placeholder="Search Tech Hub"
+            class="font-regular searchinput ot0 noshadow" type="text" name="q" id="query">
+            <button class="searchIcon button-pink-gradient anchor">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+      <div class="linkSection font-regular text-70">
+          <ul class="navUl p10">
+              <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                  <i class="fa fa-home mr2"></i>
+                  Home</li>
+
+              <li class="linkLi anchor">
+                  <i class="fa fa-info mr2"></i>
+                  About</li>
+              <li class="linkLi anchor">
+                    <i class="fa fa-cart-plus mr2"></i>
+                    Products</li>
+              <li
+              onclick="window.open('./account.html','_self')"
+              class="linkLi anchor">
+              <i class="fa fa-user mr2"></i>
+              Account</li>
+          </ul>
+      </div>
+    </nav>
+
+    <main id="errorPage" class="w100 text-center mt50 hidden">
+
+      <img src="./img/sad-img.webp" class="w20" alt="">
+      <h1 class="font-medium text-70">404</h1>
+      <h3 id="error" class="font-regular text-70 mt10">Page not found</h3>
+      <h5 id="errdescripton" class="font-thin text-70 mt10">
+        It seems like you landed on wrong page
+      </h4>
+    </main>
+
+    <main id="mainContainer" class="container">
+
+      <!-- Left Column Laptop Image -->
+      <div class="left-column">
+        <!-- <img  id="blackimage" data-image="black" src="images/img1.png" alt="">
+        <img  id="blueimage" data-image="blue" src="images/img2.png" alt=""> -->
+        <img  id="productimage" class="active nodrag" src="#" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <!-- Product Description -->
+        <div class="product-description">
+          <span class="font-bold" id="productname">Pahilo Laptop</span>
+          <h2 class="font-light text-70"id="productmodel">Bau le Kindeko </h1>
+          <p class="font-regu" id="description">This is a laptop for daily use not for gaming!</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Ram Configuration -->
+          <div class="ram-config">
+            <span class="font-medium mb20 text-70">Ram Capasity</span>
+
+            <div class="ram-choose mt20">
+              <button>8GB</button>
+              <button>12GB</button>
+              <button>16GB</button>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span class="text-70 font-regular">1100$</span>
+          <button class="wfit button button-pink-outline anchor
+          noshadow ot0 rounded font-medium
+          " onclick="window.open('./account.html')">
+            Add to cart
+            <i class="fa fa-arrow-right hoverShow"></i>
+          </button>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="./js/product.js" charset="utf-8"></script>
+  </body>
+</html>
