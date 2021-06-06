@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <script src="./data/products.js"></script>
+        <link rel="stylesheet" href="css/text-control.css">
+        <link rel="stylesheet" href="./css/search.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/search-card.css">
+        <link rel="stylesheet" href="./css/control.css">
+        <link rel="stylesheet" href="./css/navigation.css">
+
+        <title>Tech Hub</title>
+    </head>
+    <body class="noselect">
+        <nav class="nav p20">
+            <div class="logoSection anchor" onclick="window.open('index.html','_self')">
+                <h1 class="font-medium text-black">
+                    Tech Hub
+                </h1>
+            </div>
+            <div class="searchSection">
+                <form action="search.html" class="searchform" name="search" autocomplete="off" method="GET">
+                    <input 
+                    id="searchInputField"
+                    placeholder="Search Tech Hub"
+                    class="
+                    font-regular
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    <button class="searchIcon button-pink-gradient anchor">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="linkSection font-regular text-70">
+                <ul class="navUl p10">
+                    <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                        <i class="fa fa-home mr2"></i>
+                        Home</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-cart-plus mr2"></i>
+                        Products</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-envelope mr2"></i>
+                        Contact</li>
+                    <li
+                    onclick="window.open('./account.html','_self')"
+                    class="linkLi anchor">
+                    <i class="fa fa-user mr2"></i>
+                    <span id="account">Account</span></li>
+                </ul>
+            </div>
+        </nav>
+        <main id="errorPage" class="w100 text-center mt50 hidden">
+
+            <img src="./img/sad-img.webp" class="w20" alt="">
+            <h1 class="font-medium text-70">404</h1>
+            <h3 id="error" class="font-regular text-70 mt10">Page not found</h3>
+            <h5 id="errdescripton" class="font-thin text-70 mt10">
+              It seems like you landed on wrong page
+            </h4>
+        </main>
+
+
+        <section class="container" id="container">
+            <div class="filterSection">
+                <div class="filterItem">
+                    <span class="font-medium">
+                        Price
+                    </span>
+                    <br>
+                    <form class="font-regular" action="#" autocomplete="off">
+                        <input class="priceForm" type="number" placeholder="From" id="from">
+                        <span class="text-70">
+                            -
+                        </span>
+                        <input class="priceForm" type="number" placeholder="To" id="to">  
+                    </form>
+                </div>
+                <div class="filterItem">
+                    <span class="font-medium">
+                        Catagory
+                    </span>
+                    <form class="catagoryForm font-regular" action="#" id="catagory">
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Laptop
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Personal Computers
+                        </div><div>
+                            <input type="radio" name="cat" id="" value="1"> Components
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Tech Hub Specials
+                        </div>
+
+                    </form>
+                </div>
+                <div class="filterItem">
+                    <span class="font-medium">
+                        Brand
+                    </span>
+                    <form action="#" class="catagoryForm font-regular" id="catagory">
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Dell
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> MSI
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Lenevo
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> HP
+                        </div>
+                        <div>
+                            <input type="radio" name="cat" id="" value="1"> Asus
+                        </div>
+                    </form>
+                </div>
+                <div class="filterItem">
+                    <button class="button w100 button-pink-outline anchor">
+                        Apply Filter
+                    </button>
+                </div>
+            </div>
+
+            <div class="resultSection" id="resultSection">
+                <div class="cardRow">
+                    
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+    <script src="./js/account_management.js"></script>
+    <script src="./js/search.js"></script>
+</html>

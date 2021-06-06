@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/control.css">
+        <link rel="stylesheet" href="css/text-control.css">
+        <link rel="stylesheet" href="./css/navigation.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Tech Hub</title>
+        <link rel="stylesheet" href="./css/signup.css">
+    </head>
+    <body class="noselect">
+        <nav class="nav p20">
+            <div class="logoSection anchor" onclick="window.open('index.html','_self')">
+                <h1 class="font-medium text-black">
+                    Tech Hub
+                </h1>
+            </div>
+            <div class="searchSection">
+                <form action="search.html" class="searchform" name="search" autocomplete="off" method="GET">
+                    <input
+                    placeholder="Search Tech Hub"
+                    class="
+                    font-regular
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    <button class="searchIcon button-pink-gradient anchor">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="linkSection font-regular text-70">
+                <ul class="navUl p10">
+                    <li class="linkLi anchor" onclick="window.open('index.html','_self')">
+                        <i class="fa fa-home mr2"></i>
+                        Home</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-cart-plus mr2"></i>
+                        Products</li>
+                    <li class="linkLi anchor">
+                        <i class="fa fa-envelope mr2"></i>
+                        Contact</li>
+                    <li
+                    onclick="window.open('./account.html','_self')"
+                    class="linkLi anchor">
+                    <i class="fa fa-user mr2"></i>
+                    Account</li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="accountcontainer">
+            <div class="main">
+                <div class="imageSection">
+                    <img src="./img/signin.png" alt="">
+                </div>
+                <div class="formSection mt50">
+                    <h3 class="title font-regular mt20 mb20 ml30">
+                        Log In
+                    </h3>
+                    <form id="signupForm" action="#" autocomplete="off">
+
+                        <div class="form-group">
+                            <label for="" class="font-regular text-small">
+                                Email
+                            </label>
+                            <br>
+                            <input required type="email" class="accountInput" id="email" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="font-regular text-small">
+                                Password
+                            </label>
+                            <br>
+                            <input required type="password" class="accountInput" id="pass" name="name"> 
+                            <i onclick="showPassword(this)" title="Show / Hide Password" class="fa fa-eye-slash anchor"></i>
+                        </div>
+                        <div class="form-group">
+                           <button
+                           onclick="validateLogin()"
+                           class="button w100 button-pink-outline anchor">
+                               Login
+                           </button>
+                        </div>
+                        <span
+                        onclick="window.open('signup.html','_self')"
+                        class="noAccount form-group text-mid-small font-medium anchor">
+                            Don't have a account? Create One Here
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="showInfo font-regular noOpacity" id="infoCard">
+        </div>
+    </body>
+    <script src="./js/signup.js"></script>
+</html>

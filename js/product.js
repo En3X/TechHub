@@ -82,6 +82,11 @@ function showErrorSection(title,description){
 
 // Rating Control
 function rate(rating){
+  if(rating == 1){
+    infoCard.textContent = "Thank you for feedback! We will try to make the product better!";
+  }else{
+    infoCard.textContent = 'Thank you for rating the product!';
+  }
   infoCard.classList.remove('noOpacity');
   setTimeout(()=>{
     infoCard.classList.add('noOpacity');

@@ -93,6 +93,9 @@ img{
 .ml20{
     margin-left: 20px;
 }
+.ml30{
+    margin-left: 30px;
+}
 .ml40{
     margin-left: 40px;
 }
@@ -146,6 +149,7 @@ img{
 }
 .hidden{
     display: none;
+    opacity: none;
 }
 
 .noselect{

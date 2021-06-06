@@ -1,0 +1,49 @@
+.container{
+    padding: 20px;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+}
+.filterSection{
+    width: 20%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 0px 0px 5px rgba(10, 10, 10,0.1);
+}
+.priceForm{
+    margin: 10px 0px 20px 0px;
+    width: 25%;
+    border-radius: 2px;
+    padding: 7px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+.priceForm:focus{
+    outline: none;
+}
+
+.catagoryForm{
+    margin-top: 10px;
+    display: grid;
+    margin-bottom: 20px;
+}
+
+input[type=radio]{
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.resultSection{
+    width: 80%;
+    margin-left: 20px ;
+}
+.cardRow{
+    display: flex;
+    margin-top: 20px;
+}
+
+.resultSection > .cardRow:first-of-type{
+    margin-top: 0px;
+}

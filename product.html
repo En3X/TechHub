@@ -20,7 +20,7 @@
       </div>
 
       <div class="searchSection">
-        <form action="#" class="searchform" name="search" autocomplete="off" method="GET">
+        <form action="search.html" class="searchform" name="search" autocomplete="off" method="GET">
             <input
             placeholder="Search Tech Hub"
             class="font-regular searchinput ot0 noshadow" type="text" name="q" id="query">
@@ -45,7 +45,7 @@
               onclick="window.open('./account.html','_self')"
               class="linkLi anchor">
               <i class="fa fa-user mr2"></i>
-              Account</li>
+              <span id="account">Account</span></li>
           </ul>
       </div>
     </nav>
@@ -206,5 +206,7 @@
         Copyright &copy; <span id="year"></span>, All rights reserved 
     </section>
   </body>
+  <script src="./js/account_management.js"></script>
+
   <script src="./js/product.js" charset="utf-8"></script>
 </html>

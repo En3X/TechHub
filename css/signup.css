@@ -1,0 +1,65 @@
+
+.main{
+    display: flex;
+    margin-left: 7%;
+    padding: 10px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.showInfo{
+    position: absolute;
+    width: fit-content;
+    top: 15%;
+    left: 100%;
+    transform: translate(-100%,-15%);
+    z-index: 999;
+    background-color: tomato;
+    color: #fff;
+    padding: 15px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  .noOpacity{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+.imageSection{
+    width: 50%;
+}
+.imageSection>img{
+    width: 90%;
+}
+
+.formSection{
+    z-index: 1;
+    width: 50%;
+    margin-left: 40px;
+}
+.form-group{
+    width: 50%;
+    margin: 30px;
+    border-bottom: solid 1.5px #888;
+
+}
+div.form-group:last-of-type{
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+.form-group:last-of-type{
+    border-bottom: none;
+}
+label{
+    color: #39447A;
+}
+
+.accountInput{
+    font-size: 16px;
+    width: 93%;
+    padding: 10px 10px 5px 0px;
+    border: none;
+    outline: none;
+}
+
+.noAccount{
+    color: #6C63FF;
+}
