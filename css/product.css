@@ -30,6 +30,7 @@ html,body,*{
   width: 40%;
 }
 .imageSection>img{
+  transform: scale(0.8);
   width:100%;
 }
 

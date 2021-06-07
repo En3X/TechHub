@@ -71,7 +71,7 @@ function setupProduct(){
 
 function showErrorSection(title,description){
   errorSection = document.querySelector("#errorPage");
-  container = document.querySelector("#mainContainer");
+  container = document.querySelector("#main");
   errordescription = document.querySelector("#errdescripton");
   errorTitle = document.querySelector("#error");
   errorSection.classList.remove('hidden');

@@ -1,0 +1,124 @@
+.mainbanner{
+    width: 100%;
+    height: 500px;
+    height: 80vh;
+}
+.mainbannertxt {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 60;
+    position:absolute;
+    margin-bottom: 10px;
+    top: 40%;
+    left: 40%;
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 3.5px #fff;
+}
+.mainbannertxt1 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 13;
+    position:absolute;
+    top: 55%;
+    left: 41%;
+    letter-spacing: 10px;
+}
+
+
+.aboutSection{
+    text-align: center;
+}
+
+.cardSection{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 20%;
+}
+
+.card > .imageSection{
+    height: 150px;
+    overflow: hidden;
+    width: 100%;
+}
+.card > .imageSection >img{
+    
+    width: 100%;
+}
+
+.card > .imageSection >img:hover{
+    width: 100%;
+    opacity: 0.8;
+    transition: opacity 0.1s ease;
+}
+
+.textSection{
+    margin-top: 10px;
+}
+
+
+.infoMainSection{
+    background-color: #f7f7f7;
+    padding: 40px;
+}
+
+.partitionInfoSection{
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoImageSection{
+    width: 40%;
+    height: fit-content;
+}
+.infoImageSection>img{
+    width: 100%;
+}
+
+.infoTextSection{
+    padding: 30px;
+    width: 50%;
+}
+
+
+.hiringSection{
+    width: 95%;
+    background-color: #222425;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.hiringImgSection{
+    width: 35%;
+    padding: 0;
+}
+.hiringImgSection>img{
+    width: 100%;
+}
+.hiringTextSection{
+    margin-top: 40px;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+}
+
+.successSection{
+    background-color: #22BF4F;
+    padding: 10px 30px 10px 20px;
+    width: fit-content;
+    position: fixed;
+    top: 15%;
+    left: 100%;
+    transform: translatex(-100%);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.noOpacity{
+    opacity: 0;
+    transition: ease-in-out opacity 0.2s;
+}

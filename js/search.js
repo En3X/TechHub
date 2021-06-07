@@ -59,6 +59,20 @@ for(i=0;i<products.length;++i){
         } 
         column++;
         console.log("Found");
+    }else if(products[i].catagory.toLowerCase().indexOf(query) > -1
+    || query.indexOf(products[i].catagory.toLowerCase()) > -1
+    ){
+        foundResult = true;
+        if(column == 1){
+            appendHTML += '<div class="cardRow">';
+        }
+        appendHTML += '<div class="cardDemo"><center><img class="productImg" src="'+img+'" alt=""><div class="textSection"><h4 class="title font-medium">'+title+'</h4><p class="font-regular mt10">'+description+'</p><p class="font-bold pricetag mt10">USD '+price+'</p></div><button class="mt50 button button-pink-outline anchor" onclick="window.open(\'product.html?productid='+id+' \',\'_self\')">Buy Now</button></center></div>';
+        if(column == 4){
+            appendHTML += '</div>';
+            column = 0;
+        }
+        column++;
+        console.log("Found");
     }
 }
 console.log(appendHTML);
