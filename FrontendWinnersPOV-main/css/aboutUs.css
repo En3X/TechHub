@@ -1,79 +1,182 @@
-.box{
-    width:1100px;
-    height: 800px;
-    margin-left: 125px;    
+.mainbanner{
+    width: 100%;
+    height: 500px;
+    height: 80vh;
 }
+.mainbannertxt {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 60;
+    position:absolute;
+    margin-bottom: 10px;
+    top: 40%;
+    left: 40%;
+letter-spacing: 10px;
+text-shadow: 1px 1px 3.5px #fff;
+}
+.mainbannertxt1 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 13;
+    position:absolute;
+    top: 55%;
+    left: 41%;
+letter-spacing: 10px;
+}
+
 .forbg{
     width: 1100px;
-    height: 280px;
-    background-image: url(../img/img5.jpg);
-    background-size: cover;
-    border-radius: 20px;
+    height: 225px;
+    margin-left: 128px;
 }
 .banner{
-    
-    width: 1100px;
-    height:280px;
-       background-color: black;
+      overflow: hidden; 
     border-radius: 20px;
-    opacity: 70%;
 }
 
 .abttext{
     font-size:60; 
-   color: rgb(255, 255, 255);
    text-align: center;
-   margin-top:60px;
+   margin-top:40px;
 }
 .abttext1{
     font-size: 15;
     text-align: center;
-    margin-top: 80px;
-    color: rgb(255, 255, 253);
-}
-.lefty{
-    width:300px;
-    height:400px;
-    float: left;
-    margin-top:40px;
-    margin-left: 50px;
-    box-shadow: 2px 2px 13px black;
-
-}
-.wrapper{
-    width:300px;
-    height:320px;
-    background-color: rgb(242, 243, 247);
-}
-.wrapper2{
-    width:300px;
-    height: 80px;
-    background-color: rgb(242, 243, 247);
-    margin-top: none;
+ 
     
 }
-.wrapper2 h2{
-    text-align: center;
-    margin-top:10px;
-
-}
-.footer{
+.middlebanner{
     width:100%;
-    height: 200px;
-    background-color: rgb(242, 243, 247);
-    
+    background-color: r#f7f7f7;
 }
-.floc{
-	width:33%;
-	height:200px;
-	float:left;
-    margin-left: 450px;
+
+.middlebanner h1{
     text-align: center;
+
 }
-.contactus{
-	
-	height:200px;
-	float:left;
-    margin-left: 200px;
-    text-align: justify;
+
+.cardswrapper{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    float: left;
+    margin: 18px;
+
+}
+.cards{
+    width:300px;
+    height: 200px;
+    background-color: white;
+    cursor: pointer;
+    overflow: hidden;
+         
+}
+
+.cardstxt{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+.cardstxt h2{
+    margin-top: 5px;
+
+}
+.historytxt{
+    width: 100%;
+   text-align: center;
+   height: 80px;
+    margin-bottom: 10px;
+}
+.historytxt h1{
+    margin-top: 15px;
+
+}
+.historybanner{
+    width:90%;
+    margin-left: 63px;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.historybannerdiv{
+    width:50%;
+    overflow: hidden;
+    float: left;
+}
+.historybannerdiv1{
+    width:90%;
+    padding-top: 40px;
+    padding-left: 20px;
+   display:grid;
+   height: fit-content;
+   align-items: center;
+   margin-left: 25px;
+   margin-top: 20px;
+
+}
+.histxt1{
+    font-size: 30;
+    color: black;
+    font-weight: bold;
+}
+.histxt2{
+    margin-top: 20px;
+    font-size: 15;
+    color: #222425;
+}
+.bigbanner{
+    width:90%;
+    margin-left: 63px;
+    margin-bottom: 40px;
+    background-color: #222425;
+    box-shadow: 0px 0px 5px #000;
+}
+.bigbannerdiv{
+    width:50%;
+    overflow: hidden;
+    float: left;
+}
+.bigbannerdiv1{
+    width:90%;
+    padding-top: 20px;
+    padding-left: 20px;
+   display:grid;
+   align-items: center;
+   margin-top: 25px;
+   margin-left: 25px;
+   overflow: hidden;
+
+}
+
+.bigtxt1{
+    font-size: 60;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 5px;
+    overflow: hidden;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+.bigtxt2{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20;
+    color: whitesmoke;
+    left: 50PX;
+    overflow: hidden;
+    margin-bottom: none;
+}
+.bigtext2:last-of-type{
+    margin-top: 0px;
+}
+.button-pink-gradient{
+    background: linear-gradient(45deg,#FFBF00,#FF8E9A);
+    color: #fff;
+}
+#email{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px 5px 10px 10px;
 }
