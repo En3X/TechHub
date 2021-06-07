@@ -13,19 +13,18 @@
     </head>
     <body class="noselect">
         <nav class="nav p20">
-            <div class="logoSection anchor" onclick="window.open('index.html','_self')">
+            <div class="logoSection anchor" onclick="window.open('index.html#home','_self')">
                 <h1 class="font-medium text-black">
                     Tech Hub
                 </h1>
             </div>
-            <div class="searchSection">
+            <div id="#navSearch" class="searchSection">
                 <form action="search.html" class="searchform" name="search" autocomplete="off" method="GET">
-                    <input 
-                    id="searchInputField"
+                    <input
                     placeholder="Search Tech Hub"
                     class="
                     font-regular
-                    searchinput ot0 noshadow rounded" type="text" name="q" id="query">
+                    searchinput ot0 noshadow rounded" type="text" name="q" id="searchInputField">
                     <button class="searchIcon button-pink-gradient anchor">
                         <i class="fa fa-search"></i>
                     </button>
@@ -36,12 +35,15 @@
                     <li class="linkLi anchor" onclick="window.open('index.html','_self')">
                         <i class="fa fa-home mr2"></i>
                         Home</li>
-                    <li class="linkLi anchor">
+                        <li class="linkLi anchor" onclick="window.open('aboutus.html','_self')">
+                            <i class="fa fa-info mr2"></i>
+                            About</li>
+                    <li class="linkLi anchor" onclick="window.open('index.html#products','_self')">
                         <i class="fa fa-cart-plus mr2"></i>
                         Products</li>
-                    <li class="linkLi anchor">
+                    <!-- <li class="linkLi anchor">
                         <i class="fa fa-envelope mr2"></i>
-                        Contact</li>
+                        Contact</li> -->
                     <li
                     onclick="window.open('./account.html','_self')"
                     class="linkLi anchor">

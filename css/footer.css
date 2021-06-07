@@ -9,7 +9,9 @@
 .column{
     width: 25%;
 }
-
+.footer>.column>ul{
+    list-style: none;
+}
 .footer>.column>ul>li{
     margin-top: 20px;
     cursor: pointer;
