@@ -68,7 +68,7 @@ function validateForm(){
     }
 }
 function validateLogin(){
-    email = document.querySelector("#email");
+    email = document.querySelector("#emailaddress");
     password = document.querySelector("#pass");
     if(email.value==''||
     email.value == null ||
@@ -80,19 +80,23 @@ function validateLogin(){
     showPopupError("Password is required.")
     }else{
         jsonData = storage.getItem('credentials');
-        jsonData = JSON.parse(jsonData);
-        if(jsonData.email == email.value){
-            if(jsonData.password == password.value){
-                storage.setItem('isLoggedIn',true);
-                showPopupError("Login Successful! Redirecting you to home page!");
-                setTimeout(() => {
-                    window.open('index.html','_self');
-                }, 2000);
-            }else{
-                showPopupError("Password mismatch");
-            }
+        if(jsonData == null){
+            showPopupError("No account found, please make one before logging in!");
         }else{
-            showPopupError("User does not exists!");
+            jsonData = JSON.parse(jsonData);
+            if(jsonData.email == email.value){
+                if(jsonData.password == password.value){
+                    storage.setItem('isLoggedIn',true);
+                    showPopupError("Login Successful! Redirecting you to home page!");
+                    setTimeout(() => {
+                        window.open('index.html','_self');
+                    }, 2000);
+                }else{
+                    showPopupError("Password mismatch");
+                }
+            }else{
+                showPopupError("User does not exists!");
+            }
         }
     }
 }

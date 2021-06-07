@@ -6,7 +6,7 @@ console.log(infoCard);
 // Rating
 var ratingStars = document.querySelectorAll(".ratingStar");
 console.log(ratingStars.length);
-
+var catagory = "";
 // Check for product id
 var url = window.location.search;
 // console.log(url);
@@ -35,8 +35,7 @@ function setupProduct(){
   storage = document.querySelector("#storage");
   os = document.querySelector("#os");
 
-
-
+  
 
   hasProduct = false;
   for(i=0;i<products.length;++i){
@@ -49,12 +48,33 @@ function setupProduct(){
       price.textContent = "$ "+products[i].price;
       productdescription.textContent = products[i].longDes;
       // Specs
-      processor.textContent = products[i].shortDes;
-      os.textContent = products[i].os;
-      ram.textContent = products[i].ram;
-      console.log(products[i].ram);
-      graphics.textContent = products[i].graphics;
-      storage.textContent = products[i].storage;
+      p = products[i].shortDes;
+      o = products[i].os;
+      r = products[i].ram;
+      g = products[i].graphics;
+      s = products[i].storage;
+
+      if (p==""){
+        p = "N/A";
+      }
+      if (o==""){
+        o = "N/A";
+      }
+      if (r==""){
+        r = "N/A";
+      }
+      if (g==""){
+        g = "N/A";
+      }
+      if (s==""){
+        s = "N/A";
+      }
+      catagory = products[i].catagory;
+      processor.textContent = p;
+      os.textContent = o;
+      ram.textContent = r;
+      graphics.textContent = g;
+      storage.textContent = s;
 
       break;
 
@@ -105,9 +125,17 @@ function rate(rating){
 var appendHtml = "";
 var len = products.length;
 appendHtml += '<div class="productListSection">';
-similarSection = document.querySelector("#similarProducts")
-for(i=(len-1);i>(len-7);--i){
-  appendHtml += '<div class="card anchor" onclick="window.open(\'product.html\?productid='+products[i].id+'\',\'_self\')"><img id="productImage" src="'+products[i].img+'" alt=""><h3 class="font-light text-center" id="productTitle">'+products[i].name+'</h2><p class="font-regular"><small id="productDescription">'+products[i].shortDes+'</small></p><p class="font-regular"><small id="companyName">Manufacturer: '+products[i].company+'</small></p><span class="font-regular pricetag" id="price">$ '+products[i].price+'</span> </div>';
+similarSection = document.querySelector("#similarProducts");
+numOfItems = 0;
+for(i=0;i<len;++i){
+  if(products[i].catagory == catagory){
+    if(numOfItems < 6){
+      appendHtml += '<div class="card anchor" onclick="window.open(\'product.html\?productid='+products[i].id+'\',\'_self\')"><img id="productImage" src="'+products[i].img+'" alt=""><h3 class="font-light text-center" id="productTitle">'+products[i].name+'</h2><p class="font-regular"><small id="productDescription">'+products[i].shortDes+'</small></p><p class="font-regular"><small id="companyName">Manufacturer: '+products[i].company+'</small></p><span class="font-regular pricetag" id="price">$ '+products[i].price+'</span> </div>';
+      numOfItems++;
+    }else{
+      break;
+    }
+  }
 }
 appendHtml += '</div>';
 

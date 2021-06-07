@@ -480,7 +480,7 @@ var productsList =[
         },
         {
             "id":135,
-            "name": "RK ROYAL KLUDGE RK61 Wireless",
+            "name": "RK ROYAL KLUDGE RK61 Wireless Keyboard",
             "company":"RK ",
             "shortDes": "",
             "longDes":"Mechanical Gaming Keyboard, Ultra-Compact 60 Keys Bluetooth Mechanical Keyboard with Programmable Software",

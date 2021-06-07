@@ -5,6 +5,8 @@
     display: flex;
 }
 .filterSection{
+    position: sticky;
+    top: 15%;
     width: 20%;
     height: fit-content;
     background-color: #fff;
