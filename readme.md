@@ -31,17 +31,17 @@
 
 **Role Division**
 
-| Tasks                               | Person to do        |
-| :---------------------------------- | ------------------- |
-| Logo Design                         | Sahil               |
-| Content Finalization                | All                 |
-| Home page designing                 | Rijan & Manish      |
-| Image Collection / Editing          | As per page         |
-| Other Pages UI                      | All                 |
-| Main JS Integration (Functionality) | Main - Manish / All |
+| Tasks                               | Person to do        | Status	|
+| :---------------------------------- | ------------------- |--------	|
+| Logo Design                         | Sahil               | Done		|
+| Content Finalization                | All                 | Done		|
+| Home page designing                 | Rijan & Manish      | Done		|
+| Image Collection / Editing          | As per page         | Done		|
+| Other Pages UI                      | All                 | Done		|
+| Main JS Integration (Functionality) | Main - Manish / All | Done		|
 
-- [ ] Signup / Login => Modification Required
+- [x] Signup / Login => Modification Required
 - [x] Manish - Home page
 - [x] Sahil / Manish - Product page
-- [ ] Manish & All - JS Integration
-- [ ] Ayush- About us
+- [x] Manish & All - JS Integration
+- [x] Ayush- About us
