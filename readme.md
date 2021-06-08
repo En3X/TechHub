@@ -1,6 +1,10 @@
+[TOC]
+
 # Project ideas
 
-**Topics Possible**
+
+
+#### **Topics Possible**
 
 - E commerce - *(Category based)*
 - Streaming Platform (X)
@@ -10,7 +14,7 @@
   - Covid 19 Daily/Weekly Graphs
 - Business organization
 
-**Languages used**
+#### **Languages used**
 
 - HTML
 - CSS
@@ -18,30 +22,31 @@
 
 ------
 
-**Company Name: Tech Hub**
+#### **Company Name: Tech Hub**
 
-**Theme: Light Theme**
+#### **Theme: Light Theme**
 
-**Font: Montserrat**
+#### **Font: Montserrat**
 
-**Topic finalized : Business based + Ecommerce (Samsung for example)**
+#### **Topic finalized : Business based + Ecommerce (Samsung for example)**
 
 - Main focus: Laptops / PC
 - Components
 
-**Role Division**
+#### **Role Division**
 
-| Tasks                               | Person to do        | Status	|
-| :---------------------------------- | ------------------- |--------	|
-| Logo Design                         | Sahil               | Done		|
-| Content Finalization                | All                 | Done		|
-| Home page designing                 | Rijan & Manish      | Done		|
-| Image Collection / Editing          | As per page         | Done		|
-| Other Pages UI                      | All                 | Done		|
-| Main JS Integration (Functionality) | Main - Manish / All | Done		|
+| Tasks                               | Person to do        | Status |
+| :---------------------------------- | ------------------- | ------ |
+| Logo Design                         | Sahil               | Done   |
+| Content Finalization                | All                 | Done   |
+| Home page designing                 | Rijan & Manish      | Done   |
+| Image Collection / Editing          | As per page         | Done   |
+| Other Pages UI                      | All                 | Done   |
+| Main JS Integration (Functionality) | Main - Manish / All | Done   |
 
 - [x] Signup / Login => Modification Required
 - [x] Manish - Home page
 - [x] Sahil / Manish - Product page
 - [x] Manish & All - JS Integration
-- [x] Ayush- About us
+- [x] Ayush - About us
+
